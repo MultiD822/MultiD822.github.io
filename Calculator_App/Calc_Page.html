@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KS_Calculator App</title>
+        <link rel="stylesheet" href="Calc_Style.css">
+    </head>
+    
+    <body>
+        <header>
+            <h3>Running Total Calculator</h3>
+            <div id="dark_Mode_Switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+
+        <div id="the_Calculator">
+            <!--The readonly will prevent the user from being able to click input filed--> 
+            <input id="the_Calculator_Display" readonly>
+
+            <div id="calculator_Buttons">
+                <button onclick="clear_Calc_Display()" class="Operations_BTN">AC</button>
+                <button onclick="toggle_Negtive_Sign()" class="Operations_BTN">+/-</button>
+                <button onclick="the_Percent_Input()" class="Operations_BTN">%</button>
+                <button onclick="operator_Input('/')" class="Operations_BTN">÷</button>
+                
+                <button onclick="digit_Input('7')">7</button>
+                <button onclick="digit_Input('8')">8</button>
+                <button onclick="digit_Input('9')">9</button>
+                <button onclick="operator_Input('*')" class="Operations_BTN">×</button>
+                
+                
+                <button onclick="digit_Input('4')">4</button>
+                <button onclick="digit_Input('5')">5</button>
+                <button onclick="digit_Input('6')">6</button>
+                <button onclick="operator_Input('-')" class="Operations_BTN">-</button>
+
+                <button onclick="digit_Input('1')">1</button>
+                <button onclick="digit_Input('2')">2️</button>
+                <button onclick="digit_Input('3')">3️</button>
+                <button onclick="operator_Input('+')" class="Operations_BTN">+</button>
+            </div>
+            <div id="bottem_Buttons">
+                <button onclick="digit_Input('0')" class="Zero_Button">0️</button>
+                <button onclick="decimal_Input('.')">.</button>
+                <button onclick="calculate_Equation_Array()" class="Operations_BTN">=</button>
+            </div>
+        </div>
+
+        <!--Displays the calculators history to the user--> 
+        <div id="calculator_history">
+            <div id="history_Display">
+              
+            </div>
+        </div>
+        
+        <script src="Calc_Logic.js"></script>
+    </body>
+</html>

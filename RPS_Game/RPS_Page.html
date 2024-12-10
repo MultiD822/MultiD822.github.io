@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="rps_Style.css">
+    </head>
+    <body>
+        <h1>Rock - Paper - Scissor Game</h1>
+        
+        <div class="Start_Screen" id="start_Screen">
+            <button onclick="start_Game()">Start Game</button>
+        </div>
+        <div class="Play_Screen" id="play_Screen">
+            <div id="timer_Display"></div>
+            <h2>Click on the icon that represents one of the three options in the game to make your choice</h2>
+            <div class="input_Selections">
+                <button class="game_Button" id="rock">🪨</button>
+                <button class="game_Button" id="paper">📃</button>
+                <button class="game_Button" id="scissors">✂️</button>
+            </div>
+            <div class="display_Round_Number">
+                Round: <span id="round_Number">0</span>
+            </div>
+            <div class="display_The_Score">
+                User Score: <span id="user_Score">0</span>
+            </div>
+            <div class="display_The_Score">
+                Computer Score: <span id="computer_Score">0</span>
+            </div>
+            <h2>===========================================</h3>
+            <div id="display_Player_Choice">
+                USER:
+            </div>
+    
+            <div id="display_Computer_Choice">
+                COMPUTER:
+            </div>
+            <div id="display_End_Result"></div>
+            <button onclick="playRound()" id="play_Again_Button">Play again</button>
+        </div>
+        
+        
+        <script src="RPS_Logic.js"></script>
+    </body>
+</html>

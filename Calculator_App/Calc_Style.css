@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    padding: 10;
+    gap: 10px;
+    background-color: hsl(221, 8%, 54%);
+    color: white;
+}
+
+.dark-mode{
+    background-color: hsl(221, 59%, 89%);
+    color: black;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+header{
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    background-color: hsl(222, 24%, 32%);
+    width: 100%;
+    
+}
+
+/*Start of the Calculator group elements*/
+#the_Calculator{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: hsl(221, 53%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    border: solid;
+    margin-left: 500px;
+}
+#the_Calculator_Display{
+    width: 100%;
+    padding: 20;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: hsl(221, 58%, 24%);
+    
+}
+/*End of the Calculator group elements*/
+
+/*Start of button group*/
+#calculator_Buttons{
+    display: grid;
+    /*fr stamds for fractional unit*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 15;
+    
+}
+#bottem_Buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    padding: 15;
+    margin-top:1%;
+}
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  border: none;
+  background-color: hsl(220, 6%, 39%);
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer; 
+}
+
+button:hover{
+    background-color: hsl(221, 7%, 52%);
+}
+
+button:active{
+    background-color: hsl(222, 10%, 75%);
+}
+.Operations_BTN{
+    background-color: hsl(194, 87%, 45%);
+}
+.Zero_Button{
+    width: 225px; 
+}
+/*End of button group*/
+
+/*Start of the Calculator History group elements*/
+#calculator_history{
+    border-radius: 25px;
+    width: 400px;
+    height: 625px;
+    width: 400px;
+    border: solid;
+    background-color: hsl(222, 24%, 32%);
+    overflow: scroll;
+}
+#history_Display{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 25;
+}
+/*End of the Calculator History group elements*/

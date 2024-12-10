@@ -1,0 +1,70 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(199, 12%, 74%);
+}
+
+h1{
+  font-size: 3.5rem;
+  color: hsl(213, 42%, 24%);
+}
+
+h2{
+  align-items: center;
+}
+.input_Selections{
+    margin-bottom: 30px;
+}
+
+.Play_Screen{
+  visibility: hidden;
+}
+.Start_Screen{
+  visibility: visible;
+}
+.input_Selections button{
+  font-size: 6.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 30px;
+  background-color: hsl(220, 6%, 39%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.input_Selections button:hover{
+  background-color: hsl(222, 8%, 59%);
+}
+
+#display_Player_Choice, #display_Computer_Choice{
+  font-size: 2rem;
+}
+
+#display_End_Result{
+  font-size: 3.5rem;
+  margin: 40px 0;
+}
+
+.display_The_Score{
+    font-size: 2.5rem;
+}
+
+.display_Round_Number{
+    font-size: 2.2rem;
+}
+
+.winning_Text{
+    color: hsl(143, 55%, 40%);
+}
+
+.losing_Text{
+    color: hsl(0, 91%, 48%);
+}
+
+#play_Again_Button{
+  visibility: hidden;
+}
